@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Define a largura da página para corresponder à largura da tela do dispositivo, importante para responsividade -->
+    <title>Help Center</title> <!-- Título da página que aparece na aba do navegador -->
+
+    <!-- Link para o arquivo CSS de estilos personalizados -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Importação da fonte 'GT America Trial' via CDN -->
+    <link
+      href="https://fonts.cdnfonts.com/css/gt-america-trial"
+      rel="stylesheet"
+    />
+
+    <!-- Importação dos ícones da biblioteca Boxicons via CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  </head>
+  <body>
+    <header class="header">
+    <nav class="nav">
+      <div class="nav-container"> <!-- Contêiner que organiza os itens de navegação em uma linha -->
+        <!-- Logo e Help Center -->
+        <div class="logo-container"> <!-- Contêiner para o logo e link do Help Center -->
+          <div class="logo-container">
+            <img src="./img/logo-text.png" alt="Logo" class="logo" width="120" height="30" />
+            <span>|</span> <!-- Barra vertical para separar o logo do link do Help Center -->
+            <a href="#" class="help-center">Help Center</a> <!-- Link para o Help Center -->
+          </div>
+        </div>
+        
+        <!-- Contêiner para os botões à direita -->
+        <div class="buttons-container">
+          <!-- Botão para envio de requisição -->
+          <button type="button" class="request-button">
+            Submit a request
+          <!-- Botão de login (Sign in) -->
+          </button>
+          <button type="button" class="sign-in-button">
+            Sign in
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <main>
+      <!-- Seção de busca principal -->
+      <section class="search-section">
+        <div class="search-container"> <!-- Contêiner centralizado para limitar a largura da seção de busca -->
+          <!-- Título da seção de busca -->
+          <h1 class="search-title">How can we help?</h1> <!-- Título com uma pergunta, incentivando a busca -->
+          <!-- Rótulo e campo de busca -->
+          <label for="search" class="search-label">
+            <!-- Campo de entrada para o termo de busca -->
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search"
+              class="search-input"
+            />
+            <!-- Ícone de seta para sugerir a ação de busca -->
+            <i class="bx bx-right-arrow-alt search-icon"></i>
+          </label>
+        </div>
+      </section>
+     <!--Adição de cor ao background--> 
+    <div class="cards-section-background">
+    <!--Seção de cards-->
+    <section class="cards-section">
+    <!-- Card 1: Card individual com informações sobre "Branches" -->
+    <div class="card">
+      <img src="./img/abstract.png" alt="Abstract">
+      <div class="card-content">
+        <h3 class="card-title">Branches</h3>
+        <p class="card-text">
+          Abstract Branches lets you manage, version, and document your designs in one place.
+        </p>
+        <a href="#" class="card-button">
+          Learn More
+          <i class="bx bx-right-arrow-alt card-icon"></i>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="./img/account.png" alt="Manage your account">
+      <div class="card-content">
+        <h3 class="card-title">Manage your account</h3>
+        <p class="card-text">
+          Configure your account settings, such as your email, profile details, and password.
+        </p>
+        <a href="#" class="card-button">
+          Learn More
+          <i class="bx bx-right-arrow-alt card-icon"></i>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="./img/puzzle.png" alt="Manage organizations, teams, and projects">
+      <div class="card-content">
+        <h3 class="card-title">Manage organizations, teams, and projects</h3>
+        <p class="card-text">
+          Use Abstract organizations, teams, and projects to organize your people and your work.
+        </p>
+        <a href="#" class="card-button">
+          Learn More
+          <i class="bx bx-right-arrow-alt card-icon"></i>
+        </a>
+      </div>
+    </div>
+        
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="./img/money.png" alt="Abstract">
+      <div class="card-content">
+        <h3 class="card-title">Manage billing</h3>
+        <p class="card-text">
+          Change subscriptions and payment details.        
+        </p>
+        <a href="#" class="card-button">
+          Learn More
+          <i class="bx bx-right-arrow-alt card-icon"></i>
+        </a>
+      </div>
+    </div>
+      
+    <!-- Card 5 -->
+    <div class="card">
+      <img src="./img/key.png" alt="Abstract">
+      <div class="card-content">
+        <h3 class="card-title">Authenticate to Abstract</h3>
+        <p class="card-text">
+          Set up and configure SSO, SCIM, and Just-in-Time provisioning.        
+        </p>
+        <a href="#" class="card-button">
+          Learn More
+          <i class="bx bx-right-arrow-alt card-icon"></i>
+        </a>
+      </div>
+    </div>
+                
+    <!-- Card 6 -->
+    <div class="card">
+      <img src="./img/message.png" alt="Abstract">
+      <div class="card-content">
+        <h3 class="card-title">Abstract support</h3>
+        <p class="card-text">
+          Get in touch with a human.        
+        </p>
+        <a href="#" class="card-button">
+          Learn More
+          <i class="bx bx-right-arrow-alt card-icon"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+  <!-- Contêiner principal do rodapé que agrupa as seções e o conteúdo adicional -->
+  <div class="footer-container">
+    <!-- Seção "Abstract" no rodapé -->
+    <div class="footer-section">
+      <h4>Abstract</h4>
+      <ul>
+        <li><a href="#">Branches</a></li>
+      </ul>
+    </div>
+    <!-- Seção "Resources" com links para recursos adicionais -->
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Release Notes</a></li>
+        <li><a href="#">Status</a></li>
+      </ul>
+    </div>
+    <!-- Seção "Community" com links para redes sociais e comunidade -->
+    <div class="footer-section">
+      <h4>Community</h4>
+      <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Dribbble</a></li>
+        <li><a href="#">Podcast</a></li>
+      </ul>
+    </div>
+    <!-- Seção "Company" com links institucionais e de contato -->
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Legal</a></li>
+      </ul>
+      <h4>Contact Us</h4>
+      <ul>
+        <li><a href="mailto:info@abstract.com">info@abstract.com</a></li>
+      </ul>
+    </div>
+    <!-- Seção inferior do rodapé contendo logo e direitos autorais -->
+    <div class="footer-bottom">
+      <img src="logo.png" alt="Abstract Logo" class="footer-logo">
+      <p>© Copyright 2022<br>Abstract Studio Design, Inc.<br>All rights reserved</p>
+
+    </div>    
+</footer>
+
+  </body>
+</html>

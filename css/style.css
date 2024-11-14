@@ -1,0 +1,299 @@
+/* Estilos gerais e variáveis de cores */
+:root {
+  --primary-color: #3A4BB3; /* Nova Cor primária para elementos principais */
+  --secondary-color: #8388A8; /* Nova Cor secundária para elementos de destaque */
+  --bg-color: #000; /* Cor de fundo da página ou elementos de destaque */
+  --text-color: #F5F5F5; /* Nova Cor do texto principal */
+  --border-color: #77a6b6; /* Cor para bordas e elementos delimitadores */
+  
+}
+
+/* Estilo para o corpo da página */
+body {
+  font-family: 'GT America Trial', sans-serif; /* Fonte principal do corpo */
+  margin: 0; /* Remove a margem padrão do corpo */
+  color: #F5F5F5; /* Nova Cor padrão do texto */
+}
+
+/* Estilo para o cabeçalho (header) */
+.header {
+  background-color: var(--bg-color); /* Cor de fundo do cabeçalho */
+  color: var(--text-color); /* Cor do texto do cabeçalho */
+  padding: 20px 0; /* Espaçamento interno no topo e embaixo */
+}
+
+/* Estilo para a barra de navegação */
+.nav {
+  max-width: 1200px; /* Limita a largura máxima da navegação */
+  margin: 0 auto; /* Centraliza a navegação horizontalmente */
+  padding: 0 20px; /* Adiciona um espaçamento interno nas laterais */
+}
+
+/* Contêiner de navegação principal */
+.nav-container {
+  display: flex; /* Usa Flexbox para organizar os itens em linha */
+  justify-content: space-between; /* Distribui o espaço entre os itens, colocando-os nas extremidades */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+/* Contêiner para o logotipo e elementos relacionados */
+.logo-container {
+  display: flex; /* Usa Flexbox para alinhar o logotipo e outros elementos em linha */
+  align-items: center; /* Centraliza verticalmente os itens do contêiner */
+  gap: 10px; /* Adiciona um espaçamento entre os elementos dentro do contêiner */
+}
+
+
+/* Estilo para o link 'Help Center' */
+.help-center {
+  color: #F5F5F5; /* Nova cor do texto como branco suave */
+  font-size: 1.2rem; /* Define o tamanho da fonte */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  display: inline-block; /* Permite definir altura e largura específicas */
+  height: 20px; /* Define a altura do link, ajuste conforme necessário */
+  width: auto; /* A largura será automática, mas pode ser ajustada conforme necessário */
+}
+
+/* Contêiner para os ícones de navegação */
+.icon-container {
+  display: flex; /* Usa Flexbox para organizar os ícones em linha */
+  gap: 10px; /* Adiciona um espaçamento entre os ícones */
+}
+
+/* Estilo para os ícones individuais */
+.icon {
+  font-size: 1.8rem; /* Define o tamanho dos ícones */
+  cursor: pointer; /* Muda o cursor para pointer para indicar que o ícone é clicável */
+}
+
+/* Contêiner para os botões de navegação */
+.buttons-container {
+  display: flex; /* Usa Flexbox para organizar os botões em linha */
+  gap: 15px; /* Adiciona um espaçamento entre os botões */
+}
+
+/* Estilos gerais para ambos os botões (Request e Sign In) */
+.request-button, .sign-in-button {
+  padding: 10px 20px; /* Define o espaçamento interno: 10px no topo e embaixo, 20px nas laterais */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  font-weight: bold; /* Deixa o texto dos botões em negrito */
+  border-radius: 8px; /* Arredonda as bordas dos botões */
+}
+
+/* Estilo específico para o botão 'Request' */
+.request-button {
+  border: 2px solid var(--text-color); /* Define uma borda de 2px com a cor do texto */
+  background-color: transparent; /* Fundo transparente */
+  color: var(--text-color); /* Define a cor do texto usando a variável de cor */
+}
+
+/* Estilo específico para o botão 'Sign In' */
+.sign-in-button {
+  background-color: var(--primary-color); /* Define a cor de fundo do botão usando a cor primária */
+  color: var(--text-color); /* Define a cor do texto usando a variável de cor */
+  border: none; /* Remove a borda padrão */
+}
+
+
+/* Estiliza a seção principal de busca, definindo a cor de fundo e centralizando o texto */
+.search-section {
+  background-color: var(--secondary-color); /* Cor de fundo, usando uma variável para fácil modificação */
+  text-align: center; /* Centraliza o conteúdo da seção */
+  padding: 60px 20px; /* Adiciona espaçamento interno: 60px no topo e embaixo, 20px nas laterais */
+}
+
+/* Define o contêiner que limita a largura da barra de pesquisa e a centraliza */
+.search-container {
+  max-width: 600px; /* Limita a largura máxima do contêiner a 700px */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+}
+
+/* Estiliza o título da seção de busca */
+.search-title {
+  font-size: 4rem; /* Define um tamanho grande para o título */
+  margin-bottom: 20px; /* Adiciona espaçamento abaixo do título para separar do campo de busca */
+  color: #F5F5F5; /* Define a nova cor do texto*/
+  font-weight: normal; /* Remove o negrito, deixando o título com peso normal */
+}
+
+/* Define o contêiner relativo que agrupa o campo de entrada e o ícone de pesquisa */
+.search-label {
+  position: relative; /* Define um contexto de posicionamento para os elementos filhos */
+  width: 100%; /* Faz com que o contêiner ocupe toda a largura disponível */
+}
+
+/* Estiliza o campo de entrada onde o usuário digita a pesquisa */
+.search-input {
+  width: 100%; /* O campo ocupa toda a largura do contêiner */
+  padding: 15px; /* Adiciona espaçamento interno ao redor do texto no campo */
+  border: 1px solid #333; /* Adiciona uma borda fina e escura ao redor do campo */
+  border-radius: 8px; /* Arredonda as bordas do campo de entrada */
+}
+
+/* Estiliza o ícone de pesquisa para que fique posicionado dentro do campo de entrada */
+.search-icon {
+  position: absolute; /* Posiciona o ícone de forma absoluta em relação ao contêiner `.search-label` */
+  top: 50%; /* Centraliza verticalmente o ícone dentro do campo de entrada */
+  right: 15px; /* Alinha o ícone à direita, com 15px de distância da borda direita */
+  transform: translateY(-50%); /* Ajusta a posição para que o ícone fique exatamente no centro vertical */
+}
+
+
+/* Contêiner da seção de cartões */
+.cards-section {
+  display: grid; /* Utiliza Grid Layout para organizar os cartões */
+  grid-template-columns: repeat(2, 1fr); /* Define duas colunas com largura igual */
+  gap: 30px; /* Espaçamento entre os cartões */
+  max-width: 900px; /* Define a largura máxima da seção */
+  margin: 0 auto; /* Centraliza a seção horizontalmente */
+  padding: 40px 20px; /* Adiciona espaçamento interno: 40px no topo/embaixo, 20px nas laterais */
+  background-color: #1E1E2C; /* Define a nova cor de fundo da seção cards */
+  border-radius: 8px; /* Arredonda as bordas da seção */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve para dar profundidade */
+}
+
+/* Estilo para cada cartão individual */
+.card {
+  display: flex; /* Utiliza Flexbox para organizar o conteúdo do cartão */
+  align-items: flex-start; /* Alinha o conteúdo no início do eixo vertical */
+  padding: 20px; /* Espaçamento interno do cartão */
+  background-color: #1E1E2C; /* Cor de fundo do cartão */
+  border-radius: 8px; /* Arredonda as bordas do cartão */
+  text-align: left; /* Alinha o texto à esquerda */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para o cartão (opcional) */
+  /* transition: box-shadow 0.3s ease; /* Transição suave para a sombra no hover (opcional) */
+}
+
+/* Estilo para o efeito de hover no cartão */
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta a sombra no hover para destacar o cartão */
+}
+
+/* Estilo para a imagem dentro do cartão */
+.card img {
+  width: 50px; /* Define a largura da imagem */
+  margin-right: 15px; /* Espaçamento à direita da imagem */
+}
+
+/* Contêiner de conteúdo dentro do cartão */
+.card-content {
+  flex: 1; /* Faz com que o conteúdo ocupe o máximo de espaço disponível */
+  display: flex; /* Utiliza Flexbox para organizar o conteúdo */
+  flex-direction: column; /* Alinha o conteúdo em uma coluna */
+}
+
+/* Estilo para o título do cartão */
+.card-title {
+  font-size: 1.25rem; /* Define o tamanho da fonte do título */
+  font-weight: bold; /* Deixa o título em negrito */
+  margin: 0; /* Remove a margem do título */
+  color: #F5F5F5; /* Define a nova cor do título*/
+}
+
+/* Estilo para o texto dentro do cartão */
+.card-text {
+  margin: 10px 0 20px; /* Define o espaçamento: 10px em cima, 20px embaixo e 0 nas laterais */
+  font-size: 1rem; /* Define o tamanho da fonte do texto do cartão */
+  color: #CCCCCC; /* Define a nova cor do texto*/
+}
+
+/* Estilo para o botão dentro do cartão */
+.card-button {
+  display: inline-flex; /* Alinha o botão em linha e permite o uso de Flexbox */
+  align-items: center; /* Centraliza verticalmente o conteúdo dentro do botão */
+  color: var(--primary-color); /* Cor do texto do botão, utilizando uma variável CSS */
+  font-weight: bold; /* Deixa o texto do botão em negrito */
+  text-decoration: none; /* Remove o sublinhado padrão de links */
+  cursor: pointer; /* Mostra o cursor de ponteiro ao passar sobre o botão */
+  font-size: 0.9rem; /* Define o tamanho da fonte do botão */
+}
+
+/* Efeito de hover no botão do cartão */
+.card-button:hover {
+  text-decoration: underline; /* Adiciona um sublinhado ao texto ao passar o mouse sobre o botão */
+}
+
+/* Estilo para o ícone dentro do botão do cartão */
+.card-icon {
+  font-size: 1rem; /* Define o tamanho do ícone */
+  margin-left: 5px; /* Espaçamento à esquerda do ícone, separando-o do texto */
+}
+
+/* Estilo da seção de rodapé */
+.footer {
+  background-color: var(--bg-color); /* Define a cor de fundo do rodapé usando uma variável CSS */
+  color: var(--text-color); /* Define a cor do texto do rodapé usando uma variável CSS */
+  padding: 40px 20px; /* Adiciona espaçamento interno: 40px no topo/embaixo e 20px nas laterais */
+}
+
+/* Contêiner para o conteúdo do rodapé */
+.footer-container {
+  display: flex; /* Utiliza Flexbox para organizar o conteúdo do rodapé */
+  flex-wrap: wrap; /* Permite que o conteúdo quebre em uma nova linha se necessário */
+  justify-content: space-between; /* Distribui o conteúdo uniformemente, com espaço entre os itens */
+  gap: 10px; /* Define um espaçamento de 10px entre os itens do rodapé */
+  max-width: 1200px; /* Define uma largura máxima para o contêiner do rodapé */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+}
+
+/* Define o estilo da seção do rodapé */
+.footer-section {
+  flex: 1; /* Permite que cada seção dentro do rodapé ocupe o mesmo espaço, distribuindo-o uniformemente */
+}
+
+/* Define o estilo do título principal dentro da seção do rodapé */
+.footer-title {
+  font-size: 1.5rem; /* Tamanho da fonte para o título do rodapé */
+  font-weight: bold; /* Define o título como negrito */
+  margin-bottom: 1px; /* Pequeno espaço abaixo do título */
+  color: var(--footer-title-color, #F5F5F5) /*Nova cor do titulo*/
+}
+
+/* Define o estilo de títulos h4 específicos dentro de uma seção do rodapé */
+.footer-section h4 {
+  margin-top: 5px; /* Adiciona um espaço acima do título h4 */
+  font-size: 1.25rem; /* Define o tamanho da fonte do título h4 */
+  font-weight: bold; /* Deixa o título h4 em negrito */
+}
+
+/* Estilos para listas dentro das seções do rodapé */
+.footer-section ul {
+  list-style: none; /* Remove os marcadores padrão das listas */
+  padding: 0; /* Remove o espaçamento interno padrão das listas */
+}
+
+/* Estilo para itens de lista dentro das seções do rodapé */
+.footer-section ul li {
+  margin-bottom: 8px; /* Espaçamento entre cada item da lista para melhor legibilidade */
+}
+
+/* Estilo para links dentro das seções do rodapé */
+.footer-section a {
+  color: var(--text-color); /* Define a cor do texto do link, utilizando uma variável CSS */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+/* Define o estilo da parte inferior do rodapé */
+.footer-bottom {
+  display: flex; /* Utiliza Flexbox para organizar o conteúdo */
+  flex-direction: column; /* Coloca o conteúdo em uma coluna */
+  justify-content: flex-end; /* Alinha o conteúdo ao final verticalmente */
+  align-items: left; /* Alinha o conteúdo à esquerda horizontalmente */
+  text-align: left; /* Define o alinhamento do texto à esquerda */
+  padding: 20px; /* Adiciona espaçamento interno ao redor do conteúdo */
+  gap: 1px; /* Espaçamento entre elementos dentro do contêiner */
+}
+
+/* Define o tamanho do logotipo no rodapé */
+.footer-logo {
+  height: 40px; /* Define a altura do logotipo do rodapé, ajuste conforme necessário */
+}
+
+/*define a cor de fundo dos cards*/
+.cards-section-background {
+  background-color: #1E1E2C; /* Cor do fundo ao redor dos cartões */
+  padding: 20px; /* Espaço ao redor da `.cards-section` para que o fundo apareça */
+  /*border-radius: 12px; /* Arredonda as bordas do fundo */
+}
+
+
